@@ -1,0 +1,16 @@
+<h1>All Products:</h1>
+
+<ol>
+@foreach (Product product in Model)
+{
+    <ul>
+        <li>ID: @product.Id</li>
+        <li>Name: @product.Name</li>
+        <li>Description: @product.Description</li>
+        <li>Price: @product.Price</li>
+        <li>PictureUrl: @product.PictureUrl</li>
+    </ul>
+    <a href="/Products/Details/@(product.Id)"><p>View Details</p></a>
+    <br>
+}
+</ol>
