@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using MarkedDownClient.Models;
 
 namespace MarkedDownClient.Controllers
@@ -13,9 +12,15 @@ namespace MarkedDownClient.Controllers
   {
     public IActionResult Index()
     {
-      var allProducts = Product.GetProducts();
-        return View(allProducts);
+      return View();
+      // var allProducts = Product.GetProducts();
+      // return View(allProducts);
     }
+
+
+
+
+
 
     // [HttpPost]
     // public IActionResult Index(Product product)
@@ -24,17 +29,17 @@ namespace MarkedDownClient.Controllers
     //   return RedirectToAction("Index");
     // }
 
-    public IActionResult Details(int id)
-    {
-      var product = Product.GetDetails(id);
-      return View(product);
-    }
+    // public IActionResult Details(int id)
+    // {
+    //   var product = Product.GetDetails(id);
+    //   return View(product);
+    // }
 
-    public IActionResult Edit(int id)
-    {
-      var product = Product.GetDetails(id);
-      return View(product);
-    }
+    // public IActionResult Edit(int id)
+    // {
+    //   var product = Product.GetDetails(id);
+    //   return View(product);
+    // }
 
     // [HttpPost]
     // public IActionResult Details(int id, Product product)
