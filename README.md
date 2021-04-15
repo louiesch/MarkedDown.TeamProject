@@ -35,9 +35,6 @@
 14. [Acknowledgements](#acknowledgements)
 15. [Contact Information](#contact-information)
 
-## Description
-
-An [Epicodus](https://www.epicodus.com/) project to create an MVC web application to help a fictional factory owner manage the company's engineers and machines. The manager can add to a list of engineers working for the factory, a list of machines at the factory, and link engineers and machines if desired.
 
 ## Preview
 
